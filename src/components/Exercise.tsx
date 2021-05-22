@@ -8,13 +8,11 @@ export interface ExerciseProps {
   ExerciseOver: any
 }
 
-const startAudio = new Audio('start.mp3');
-const andItsDoneAudio = new Audio('andItsDone.mp3');
-
 export const Exercise = (props: ExerciseProps) => {
   const [exerciseTimeUp, setExerciseTimeUp] = useState(false);
   const [restTimeUp, setRestTimeUp] = useState(false);
   if(!exerciseTimeUp) {
+    const startAudio = new Audio('start.mp3');
     startAudio.play();
     return (
       <>
@@ -24,6 +22,7 @@ export const Exercise = (props: ExerciseProps) => {
     );
   }
   if(exerciseTimeUp && !restTimeUp) {
+    const andItsDoneAudio = new Audio('andItsDone.mp3');
     andItsDoneAudio.play();
     return (
       <>
