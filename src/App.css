@@ -1,0 +1,40 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.App-content {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.Timer {
+  background-color: black;
+  height: 50vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 10vh;
+  color: white;
+}
+
+.Description {
+  background-color: black;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  color: white;
+}
